@@ -1,18 +1,17 @@
 import java.util.Scanner;
-public class binarySearch{
+public class linearSearch{
 
-    public static void binarySearchNaive(int arr[],int key)
+    public static int linearSearch(int arr[],int key)
     {
         int n=arr.length;
         for(int i=0;i<n;i++)
         {
             if(arr[i] == key)
             {
-                System.out.println(i);
+                return i;
             }
         }
-        System.out.print(-1);
-
+        return -1;
     }
     public static void main(String args[])
     {
@@ -24,6 +23,7 @@ public class binarySearch{
             arr[i]=s.nextInt();
         }
         int key=s.nextInt();
-        binarySearchNaive(arr,key);
+        linearSearch(arr,key);
+        System.out.println(linearSearch(arr,key));
     }
 }
