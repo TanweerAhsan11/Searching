@@ -3,8 +3,9 @@ import java.util.Scanner;
 public class binarySearchRecursive {
     public static int binarySearch(int arr[], int key, int low,int high)
     {
-        while(low<=high)
-        {
+            if(low>high){
+                return -1;
+            }
             int mid=(low+high)/2;
             if(arr[mid]==key)
             {
@@ -17,8 +18,6 @@ public class binarySearchRecursive {
             else{
                 return binarySearch(arr, key, mid+1, high);
             }
-        }
-        return -1;
     }
      public static void main(String args[])
     {
