@@ -4,7 +4,7 @@ public class indexLastOccurrence {
     public static int lastOccurrence(int arr[],int key)
     {
         int n=arr.length;
-        for(int i=n-1;i>0;i--)
+        for(int i=n-1;i>=0;i--)
         {
             if(arr[i]==key)
             {
