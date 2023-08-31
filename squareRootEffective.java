@@ -4,7 +4,7 @@ public class squareRootEffective {
     public static int squareRootEffective(int num)
     {
         
-        int low=0;
+        int low=1;
         int high=num;
         int ans=-1;
         while(low<=high)
