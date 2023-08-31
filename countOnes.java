@@ -32,7 +32,6 @@ public class countOnes {
         {
             arr[i]=s.nextInt();
         }
-        // int key=s.nextInt();
         int low=0;
         int high=n-1;
         int c=countOnes(arr,low,high);
