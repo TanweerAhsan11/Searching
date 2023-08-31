@@ -86,3 +86,9 @@ public class countOccurrenceEffective {
         System.out.println(c);
     }
 }
+
+/* 
+    In this program we use iterative binary search to call for first index --> O(logn)
+    Then we call for last index using binary search --> O(logn)
+    Fianally we return (lastIndex-firstIndex and add 1) to it. 
+*/ 
